@@ -3,36 +3,37 @@
 @theme {
   --color-clifford: #da373d;
 }
-/* font lora  */
+/* font lora for body text */
 .lora {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
 }
 
-/* font great-vibes  */
+/* font great-vibes for logo  */
 .great-vibes {
   font-family: "Great Vibes", serif;
-  font-weight: 400;
   font-style: normal;
 }
 
-/* font cinzel  */
-.cinzel-decorative-regular {
+/* font cinzel for hero and title */
+.cinzel-dec {
   font-family: "Cinzel Decorative", serif;
-  font-weight: 400;
   font-style: normal;
 }
 
-.cinzel-decorative-bold {
-  font-family: "Cinzel Decorative", serif;
-  font-weight: 700;
+button,
+p {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
   font-style: normal;
 }
-
-.cinzel-decorative-black {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Cinzel Decorative", serif;
-  font-weight: 900;
   font-style: normal;
 }

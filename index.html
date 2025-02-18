@@ -16,6 +16,7 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body class="lora bg-yellow-50">
+    <!-- header section  -->
     <header id="home">
       <!-- topbar -->
       <div
@@ -45,29 +46,276 @@
 
       <!-- hero -->
       <div
-        class="h-[calc(100vh-4rem)] bg-[url(./assets/banner.jpg)] bg-cover bg-no-repeat"
+        class="relative h-[calc(100vh-4rem)] bg-[url(./assets/banner.jpg)] bg-cover bg-no-repeat"
       >
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="currentColor"
-            class="bi bi-list"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
-            />
-          </svg>
-          <div class="flex flex-col gap-4 text-white">
-            <a href="#">Home</a>
-            <a href="#services">Services</a>
-            <a href="#">Appointment</a>
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10">
+          <!-- menu  -->
+          <div class="flex items-center justify-end p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              width="24"
+              class="bi bi-list text-white"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+            <div class="absolute top-0 right-0 hidden h-screen w-full">
+              <div
+                class="h-full w-full bg-yellow-950/10 backdrop-blur-sm"
+              ></div>
+              <div
+                class="absolute top-0 right-0 h-full w-52 bg-yellow-600 px-4"
+              >
+                <div class="flex justify-end py-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-x-lg text-yellow-50"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="flex flex-col gap-4 text-white">
+                  <a href="#">Home</a>
+                  <a href="#services">Services</a>
+                  <a href="#">Appointment</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- hero text  -->
+          <div class="px-4 py-40">
+            <h1 class="text-center text-3xl font-black text-yellow-400">
+              Tailored to Perfection, Styled for You
+            </h1>
+            <p
+              class="lora mt-6 text-center text-lg tracking-wide text-yellow-200"
+            >
+              Lorem ipsum dolor sit amet consectetur scelerisque.
+            </p>
+            <div class="mt-10 text-center">
+              <button
+                class="rounded bg-yellow-500 px-6 py-3 text-lg font-medium text-yellow-50 shadow-[0_0_40px_rgba(234,179,8,0.7)] hover:bg-yellow-600 hover:shadow-yellow-600"
+              >
+                Book an Appointment
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </header>
+
+    <!-- about section  -->
+    <section class="px-4 py-20">
+      <h2 class="text-center text-4xl font-bold text-yellow-600">About Us</h2>
+      <div>
+        <img
+          src="./assets/about_us_image.jpg"
+          class="my-10 w-full rounded"
+          alt="about_us_image"
+        />
+        <p class="text-yellow-900">
+          In a small yet bustling town, two brothers, Amir and Rahim, inherited
+          a legacy of craftsmanship from their grandfather—a master tailor who
+          once stitched suits for royalty. With a vision to blend traditional
+          artistry with modern elegance, they founded "Regal Stitch Tailors."
+          <br /><br />
+          From a modest workshop, their reputation grew as word spread about
+          their impeccable fits, premium fabrics, and attention to detail. Each
+          suit, each stitch carried a story—of dedication, of precision, and of
+          timeless style. Whether it was a groom’s wedding attire or a
+          businessman's power suit, every creation was a masterpiece, tailored
+          to perfection.
+          <br /><br />
+          Their philosophy was simple: “A suit should not just fit the body, but
+          the personality.” Today, Regal Stitch Tailors stands as a beacon of
+          bespoke elegance, where tradition meets modern sophistication,
+          ensuring every client walks out with confidence and grace.
+        </p>
+      </div>
+    </section>
+
+    <!-- services section  -->
+    <section class="bg-yellow-100 px-4 py-14">
+      <h2 class="text-center text-4xl font-bold text-yellow-600">Services</h2>
+
+      <div class="flex flex-col gap-10 pt-10">
+        <div
+          class="flex flex-col items-center justify-between gap-4 rounded-lg border-2 border-yellow-500 bg-yellow-50 p-7"
+        >
+          <div>
+            <svg
+              width="48"
+              height="39"
+              viewBox="0 0 48 39"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M39.5833 5.47505C42.3399 3.56177 45.6973 5.24307 47.375 8.14901L27.97 19.5L47.375 30.8511C45.6973 33.757 42.3399 35.4385 39.5833 33.5252L23.6571 22.0229L15.3628 26.8747C15.9035 27.9353 16.2083 29.1363 16.2083 30.4084C16.2083 34.7116 12.7199 38.2 8.41667 38.2C4.11345 38.2 0.625004 34.7116 0.625004 30.4084C0.625004 26.1052 4.11345 22.6167 8.41667 22.6167C10.302 22.6167 12.0309 23.2863 13.3786 24.4006L20.164 19.5001L13.3786 14.5995C12.0309 15.7138 10.302 16.3834 8.41667 16.3834C4.11345 16.3834 0.625005 12.8949 0.625005 8.59171C0.625005 4.28849 4.11345 0.800047 8.41667 0.800047C12.7199 0.800047 16.2083 4.2885 16.2083 8.59171C16.2083 9.86384 15.9035 11.0648 15.3628 12.1254L23.6572 16.9772L39.5833 5.47505ZM8.41667 13.2667C10.9986 13.2667 13.0917 11.1736 13.0917 8.59171C13.0917 6.00978 10.9986 3.91671 8.41667 3.91671C5.83474 3.91671 3.74167 6.00978 3.74167 8.59171C3.74167 11.1736 5.83474 13.2667 8.41667 13.2667ZM8.41667 35.0834C10.9986 35.0834 13.0917 32.9903 13.0917 30.4084C13.0917 27.8264 10.9986 25.7334 8.41667 25.7334C5.83474 25.7334 3.74167 27.8264 3.74167 30.4084C3.74167 32.9903 5.83474 35.0834 8.41667 35.0834Z"
+                fill="#F59E0B"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="lora text-center text-2xl font-medium text-yellow-900">
+              Custom Tailoring
+            </h3>
+            <p class="text-center leading-5 text-yellow-800">
+              Perfectly tailored suits and dresses designed to match your style.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-between gap-4 rounded-lg border-2 border-yellow-500 bg-yellow-50 p-7"
+        >
+          <div>
+            <svg
+              width="54"
+              height="43"
+              viewBox="0 0 54 43"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.8708 0C18.5289 0 19.0773 0.478711 19.2798 1.10859C20.3176 4.35879 23.3804 6.71875 27 6.71875C30.6196 6.71875 33.6824 4.35879 34.7202 1.10859C34.9227 0.478711 35.4711 0 36.1292 0H37.1923C39.0907 0 40.9216 0.663477 42.3813 1.87285L53.0292 10.6996C53.5861 11.1615 53.932 11.8334 53.9911 12.5557C54.0502 13.2779 53.8139 13.9918 53.333 14.5377L48.6081 19.9127C47.6462 21.0129 45.9756 21.1389 44.845 20.2066L40.4998 16.6037V37.625C40.4998 40.5896 38.0782 43 35.0999 43H18.9001C15.9218 43 13.5002 40.5896 13.5002 37.625V16.6037L9.155 20.2066C8.03283 21.1389 6.36224 21.0129 5.39194 19.9127L0.667024 14.5377C0.186095 13.9918 -0.050151 13.2779 0.00891051 12.5557C0.067972 11.8334 0.413903 11.1615 0.970769 10.6996L11.6187 1.87285C13.0784 0.663477 14.9093 0 16.8077 0H17.8708Z"
+                fill="#F59E0B"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="lora text-center text-2xl font-medium text-yellow-900">
+              Alterations
+            </h3>
+            <p class="text-center leading-5 text-yellow-800">
+              Seamless alterations to ensure a flawless fit for every occasion.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center justify-between gap-4 rounded-lg border-2 border-yellow-500 bg-yellow-50 p-7"
+        >
+          <div>
+            <svg
+              width="54"
+              height="45"
+              viewBox="0 0 54 45"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M27 0.899902C28.4934 0.899902 29.7 2.10646 29.7 3.5999V21.1499C29.7 21.8924 30.3075 22.4999 31.05 22.4999C31.7925 22.4999 32.4 21.8924 32.4 21.1499V6.2999C32.4 4.80646 33.6066 3.5999 35.1 3.5999C36.5934 3.5999 37.8 4.80646 37.8 6.2999V21.1499C37.8 21.8924 38.4075 22.4999 39.15 22.4999C39.8925 22.4999 40.5 21.8924 40.5 21.1499V11.6999C40.5 10.2065 41.7066 8.9999 43.2 8.9999C44.6934 8.9999 45.9 10.2065 45.9 11.6999V28.1615C44.8959 28.5665 44.1028 29.4187 43.7906 30.5071L43.0397 33.1396L40.4072 33.8905C38.8631 34.3377 37.8 35.7468 37.8 37.3499C37.8 38.9446 38.8547 40.3537 40.3819 40.8008C37.8338 42.868 34.5853 44.0999 31.05 44.0999H29.43C24.4012 44.0999 19.5666 42.1677 15.93 38.6999L6.44625 29.6718C5.09625 28.3893 5.04563 26.2462 6.32812 24.8962C7.61063 23.5462 9.75375 23.4955 11.1038 24.778L16.2084 29.638C16.2084 29.5115 16.2 29.3765 16.2 29.2499V6.2999C16.2 4.80646 17.4066 3.5999 18.9 3.5999C20.3934 3.5999 21.6 4.80646 21.6 6.2999V21.1499C21.6 21.8924 22.2075 22.4999 22.95 22.4999C23.6925 22.4999 24.3 21.8924 24.3 21.1499V3.5999C24.3 2.10646 25.5066 0.899902 27 0.899902ZM26.3841 28.4568C26.2913 28.1277 25.9875 27.8999 25.65 27.8999C25.3125 27.8999 25.0087 28.1277 24.9159 28.4568L24.3 30.5999L22.1569 31.2158C21.8278 31.3087 21.6 31.6124 21.6 31.9499C21.6 32.2874 21.8278 32.5912 22.1569 32.684L24.3 33.2999L24.9159 35.443C25.0087 35.7721 25.3125 35.9999 25.65 35.9999C25.9875 35.9999 26.2913 35.7721 26.3841 35.443L27 33.2999L29.1431 32.684C29.4722 32.5912 29.7 32.2874 29.7 31.9499C29.7 31.6124 29.4722 31.3087 29.1431 31.2158L27 30.5999L26.3841 28.4568ZM8.775 11.0249L12.8503 12.1893C13.2384 12.299 13.5 12.6533 13.5 13.0499C13.5 13.4465 13.2384 13.8008 12.8503 13.9105L8.775 15.0749L7.61062 19.1502C7.50094 19.5383 7.14656 19.7999 6.75 19.7999C6.35344 19.7999 5.99906 19.5383 5.88938 19.1502L4.725 15.0749L0.649687 13.9105C0.261562 13.8008 0 13.4465 0 13.0499C0 12.6533 0.261562 12.299 0.649687 12.1893L4.725 11.0249L5.88938 6.94959C5.99906 6.56146 6.35344 6.2999 6.75 6.2999C7.14656 6.2999 7.50094 6.56146 7.61062 6.94959L8.775 11.0249ZM49.275 35.3249L53.3503 36.4893C53.7384 36.599 54 36.9533 54 37.3499C54 37.7465 53.7384 38.1008 53.3503 38.2105L49.275 39.3749L48.1106 43.4502C48.0009 43.8383 47.6466 44.0999 47.25 44.0999C46.8534 44.0999 46.4991 43.8383 46.3894 43.4502L45.225 39.3749L41.1497 38.2105C40.7616 38.1008 40.5 37.7465 40.5 37.3499C40.5 36.9533 40.7616 36.599 41.1497 36.4893L45.225 35.3249L46.3894 31.2496C46.4991 30.8615 46.8534 30.5999 47.25 30.5999C47.6466 30.5999 48.0009 30.8615 48.1106 31.2496L49.275 35.3249Z"
+                fill="#F59E0B"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col gap-2">
+            <h3 class="lora text-center text-2xl font-medium text-yellow-900">
+              Embroidery
+            </h3>
+            <p class="text-center leading-5 text-yellow-800">
+              Exquisite embroidery to add a unique touch to your garments.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <button
+          class="rounded border-1 border-yellow-500 px-6 py-3 text-lg font-medium text-yellow-500 shadow-[0_0_40px_rgba(234,179,8,0.7)] hover:border-yellow-600 hover:bg-yellow-600 hover:text-yellow-50 hover:shadow-yellow-600"
+        >
+          Book an Appointment
+        </button>
+      </div>
+    </section>
+
+    <!-- Collections section -->
+    <section class="px-4 py-20">
+      <h2 class="text-center text-4xl font-bold text-yellow-600">
+        Collections
+      </h2>
+      <div class="flex flex-col gap-10 pt-10">
+        <div>
+          <img
+            src="./assets/collection-1.jpg"
+            class="w-full rounded-t"
+            alt="panjabi_image"
+          />
+          <p class="mt-1 text-lg text-yellow-700">
+            Chic Custom Tailoring for Every Occasion
+          </p>
+          <p class="text-2xl text-yellow-900">₹ 500</p>
+        </div>
+        <div>
+          <img
+            src="./assets/panjabi_image_2.jpg"
+            class="w-full rounded-t"
+            alt="panjabi_image"
+          />
+          <p class="mt-1 text-lg text-yellow-700">
+            Chic Custom Tailoring for Every Occasion
+          </p>
+          <p class="text-2xl text-yellow-900">₹ 500</p>
+        </div>
+        <div>
+          <img
+            src="./assets/suit_image.jpg"
+            class="w-full rounded-t"
+            alt="panjabi_image"
+          />
+          <p class="mt-1 text-lg text-yellow-700">
+            Chic Custom Tailoring for Every Occasion
+          </p>
+          <p class="text-2xl text-yellow-900">₹ 500</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Collections section -->
+    <section class="px-4 py-20 overflow-clip">
+      <h2 class="text-center text-4xl font-bold text-yellow-600">
+        Collections
+      </h2>
+      <div class="flex w-max flex-row gap-10 pt-10">
+        <div
+          class="flex w-80 flex-col items-center gap-2 rounded-lg border border-yellow-500 bg-yellow-100 p-10"
+        >
+          <img
+            src="./assets/avater.jpg"
+            class="w-24 rounded-full ring ring-yellow-600"
+            alt=""
+          />
+          <h3 class="lora text-xl font-medium text-yellow-900">Greg Stuart</h3>
+          <p class="text-center text-yellow-800">
+            The best tailoring experience I've ever had! My suit was a perfect
+            fit and the attention to detail was remarkable. Highly recommend!
+          </p>
+        </div>
+        <div
+          class="flex w-80 flex-col items-center gap-2 rounded-lg border border-yellow-500 bg-yellow-100 p-10"
+        >
+          <img
+            src="./assets/avater.jpg"
+            class="w-24 rounded-full ring ring-yellow-600"
+            alt=""
+          />
+          <h3 class="lora text-xl font-medium text-yellow-900">Greg Stuart</h3>
+          <p class="text-center text-yellow-800">
+            The best tailoring experience I've ever had! My suit was a perfect
+            fit and the attention to detail was remarkable. Highly recommend!
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
